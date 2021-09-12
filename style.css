@@ -1,0 +1,110 @@
+
+body {
+  font-family: "Mumblers Demo";
+  background-color: rgb(243, 169, 33);
+  text-align: center;
+  background: -webkit-linear-gradient(#F78154, #F2C14E);
+  background: -o-linear-gradient(#F78154, #F2C14E);
+  background: -moz-linear-gradient(#F78154, #F2C14E);
+  background: linear-gradient(#F78154, #F2C14E);
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+.groceries {
+  width: 600px;
+  min-height: 100vh;
+  margin: auto;
+  background-image: url("./autumn.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+#background.switch {
+  background-image: url("./notebook.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.groceries h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+#title.switch {
+  color: darkorange;
+}
+
+#choose {
+  font-size: 1.5rem;
+  background-color:orange;
+}
+
+p {
+  font-size: 1.7rem;
+  background-color: transparent;
+}
+
+.groceries i {
+  color: orange;
+  font-size: 1.3rem;
+}
+
+.groceries input {
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  border-bottom: 3px solid orange;
+  background-color: transparent;
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+ul {
+  margin: auto;
+  padding: 0;
+}
+
+li {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+li.done {
+  text-decoration: line-through;
+  text-decoration-color: orangered;
+}
+
+button {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  margin-left: 5px;
+}
+button > .done {
+  text-decoration: none;
+}
+
+@media (max-width:480px) {
+  .groceries h1 {
+    font-size: 2rem;
+  }
+  .groceries i {
+    font-size: 1rem;
+  }
+  .groceries input {
+    font-size: 1rem;
+    margin-left: 25px;
+    font-size: 1rem;
+    width: 50%;
+  }
+}
+
